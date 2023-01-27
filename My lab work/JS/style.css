@@ -1,0 +1,34 @@
+ 
+.menu-item {
+  border: 10px solid #66CDAA;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.menu-item .submenu{
+  height: 40px;
+  width: 120px;
+  background: blue;
+  position: absolute;
+  cursor: pointer;
+}
+.menu .ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 20px;
+}
+
+.menu .title  
+{
+  margin: 20px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+
+
+
+
+

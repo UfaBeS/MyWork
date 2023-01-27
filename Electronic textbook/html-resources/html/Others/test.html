@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Тест по изученному материалу</title>
+        <link href="../../css/style.css" rel="stylesheet">
+        <script src="../../js/script.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    </head>
+    <body onload="preConvert()">
+        <div class = "test">
+            <h1>Тест по изученному материалу</h1>
+            <form>
+                <div class = "buttonHolder" id="startTest">
+                    <input type="button" value="Начать тест" onclick="startTest()"/>
+                </div>
+                    <span class = "questions" id = "questions" hidden>
+                        <ol>
+                            <li>
+                                <div class = "liq">
+                                    Чувствителен ли к регистру Python?
+                                    <ol type="I">
+                                        <li><input type="radio" name="q1">Python не важен регистр</li>
+                                        <li><input type="radio" name="q1">Python важен регистр</li>
+                                        <li><input type="radio" name="q1">Возможно оба варианта ответа</li>
+                                        <li><input type="radio" name="q1">Ни один вариант не верный</li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <div class = "liq">
+                                    Что выведет программа?<p>
+                                        >> if 1: <p>
+
+    ... print('true')<p>
+
+    >>else:<p>
+
+    ... print('false')<p>
+
+    ...<p>
+
+                                    <ol type="I">
+                                        <li><input type="radio" name="q2">Ничего</li>
+                                        <li><input type="radio" name="q2">Единицу</li>
+                                        <li><input type="radio" name="q2">true</li>
+                                        <li><input type="radio" name="q2">false</li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <div class = "liq">
+                                    Какое последнее число выведет программа?<p>
+                                    >>> i = 5 <p>
+
+>>> while i < 15: <p>
+
+... print(i)<p> 
+
+... i = i + 2 <p>
+
+                                    <ol type="I">
+                                        <li><input type="radio" name="q3">7</li>
+                                        <li><input type="radio" name="q3">11</li>
+                                        <li><input type="radio" name="q3">12</li>
+                                        <li><input type="radio" name="q3">13</li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <div class = "liq">
+                                    Что делает данная функция?<p>
+                                        hex(х)<p>
+                                    <ol type="I">
+                                        <li><input type="radio" name="q4">Преобразовывает целое число в  шестнадцатеричную строку</li>
+                                        <li><input type="radio" name="q4">Преобразовывает целое число в  восьмеричную строку</li>
+                                        <li><input type="radio" name="q4">Преобразовывает целое число в  двоичную строку</li>
+                                        <li><input type="radio" name="q4">Преобразовывает целое число в  десятичную строку</li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <div class = "liq">
+                                    Какую последовательность представляет из себя строка?
+                                    <ol type="I">
+                                        <li><input type="radio" name="q5">Бесконечную</li>
+                                        <li><input type="radio" name="q5">Неизменяемую</li>
+                                        <li><input type="radio" name="q5">Изменяемую</li>
+                                        <li><input type="radio" name="q5">Пустую</li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <div class = "liq">
+                                    Что такое Python?
+                                    <ol type="I">
+                                        <li><input type="radio" name="q6">Язык программирования</li>
+                                        <li><input type="radio" name="q6">Язык разметки</li>
+                                        <li><input type="radio" name="q6">Язык общения</li>
+                                        <li><input type="radio" name="q6">Язык змей</li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <div class = "liq">
+                                    Что делает данная функция?<p>
+                                     list.count(x) :
+                                    <ol type="I">
+                                        <li><input type="radio" name="q7">Считает количество х</li>
+                                        <li><input type="radio" name="q7">Выводит количество х</li>
+                                        <li><input type="radio" name="q7">Возвращает количество элементов со значением x</li>
+                                        <li><input type="radio" name="q7">Сохраняет значение х</li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <div class = "liq">
+                                    Как иначе называют словари?
+                                    <ol type="I">
+                                        <li><input type="radio" name="q8">Ассоциативными массивами</li>
+                                        <li><input type="radio" name="q8">Списками</li>
+                                        <li><input type="radio" name="q8">Документом</li>
+                                        <li><input type="radio" name="q8">Динамическим массивом</li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <div class = "liq">
+                                    В чем отличие set и frozenset?
+                                    <ol type="I">
+                                        <li><input type="radio" name="q9">set - изменяемый, а frozenset - нет</li>
+                                        <li><input type="radio" name="q9">frozenset - изменяемый, а set - нет</li>
+                                        <li><input type="radio" name="q9">frozenset имеет больше функций чем set</li>
+                                        <li><input type="radio" name="q9">set имеет больше функций чем frozenset</li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <div class = "liq">
+                                    В чём приемущество и недостаток кортежа?
+                                    <ol type="I">
+                                        <li><input type="radio" name="q10">Его нельзя редактировать</li>
+                                        <li><input type="radio" name="q10">Он саморедактируемый</li>
+                                        <li><input type="radio" name="q10">Его можно редактировать в любое время</li>
+                                    </ol>
+                                </div>
+                            </li>
+                        </ol>
+                    </span>
+                <div class = "buttonHolder" id="endTest" hidden>
+                    <input type="button" value="Завершить тест" onclick="endTest()"/>
+                </div>
+                <p id = "estimate"></p>
+                <div class = "buttonHolder" id="repeatTest" hidden>
+                    <input type="reset" value="Повторить тест" onclick="repeatTest()"/>
+                </div>
+            </form>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 2</title>
+	<link rel="stylesheet"  href="zd2.css">
+
+</head>
+<body>
+
+	<div class="container">
+  <div class="carousel">
+    <div class="item a"><img id="a0" alt="0" src="images/img-1-sm.jpg"width="250" height="200"></div>
+    <div class="item b"><img id="a1" alt="1" src="images/img-2-sm.jpg"width="250" height="200"></div>
+    <div class="item c"><img id="a2" alt="2" src="images/img-3-sm.jpg"width="250" height="200"></div>
+    <div class="item e"><img id="a3" alt="3" src="images/img-4-sm.jpg"width="250" height="200"></div>
+    <div class="item d"><img id="a4" alt="4" src="images/img-5-sm.jpg"width="250" height="200"></div>
+  </div>
+</div>
+<div class="start" onClick="ChekStart()">Start</div>
+<div class="stop" onClick="CarusStop()">Stop</div>
+<div id="home"><button class="home" onclick="document.location='../index.html'">HomePage</button>
+<script>
+
+  var intervalId = 0;
+  function ChekStart(){
+    if (intervalId == 0){ 
+      intervalId = setInterval(Carus,1000);
+    }
+  };
+  function CarusStop(){
+      clearInterval(intervalId);
+      intervalId = 0;
+  }
+
+    function Carus(){
+    var i;
+    var image;
+    var imgs=new Array('images/img-1-sm.jpg', 'images/img-2-sm.jpg', 'images/img-3-sm.jpg','images/img-4-sm.jpg','images/img-5-sm.jpg');
+      for (let j = 0; j < 5; j++){
+        image = document.getElementById("a" + j);
+        i = image.alt;
+        i++;
+        if (i > 4) 
+        {
+          i = 0;
+        }
+        image.src = imgs[i];
+        image.alt = i;
+       }
+      }
+
+</script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,32 @@
+
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+	 <link rel="stylesheet" href="./style.css">
+<h1 align=center>Задание 3: Построение эллипса<BR></h1>
+<TABLE BORDER=0>
+<THEAD><TR>Задайте длины полуосей</TR><THEAD>
+<TR><TD>Горизонтальная a=<TD>
+<TD><INPUT TYPE="text" name="A" ID="A"></TD></TR>
+<TR><TD>Вертикальная b=<TD>
+<TD><INPUT TYPE="text" name="B" ID="B"></TD></TR>
+<TR><TD> &nbsp;<TD></TR>
+<TR><TD><INPUT type="BUTTON" value='ПОСТРОИТЬ' onclick="draw_ellipse()"></TD><TR>
+</TABLE>
+<DIV ID="K" class="K">
+</div>
+<div id="home"><button class="home1" onclick="document.location='../index.html'">HomePage</button>
+<script>
+function draw_ellipse()
+{	//D=document.forms[0].D.value
+	var A=document.getElementById('A').value
+	var B=document.getElementById('B').value
+	sEllipse='<svg height="500" width="500">'+
+	'<ellipse cx="250" cy="250" rx="'+A+'" ry="'+B+'" style="fill:#FF4500;stroke:purple;stroke-width:2" />'+
+	'<line x1="250" y1="0" x2="250" y2="500" style="stroke:black;stroke-width:2" />'+
+	'<line x1="0" y1="250" x2="500" y2="250" style="stroke:black;stroke-width:2" />'+
+	'</svg>'
+	document.getElementById('K').innerHTML=sEllipse
+}</script>
+</body>
+</html>

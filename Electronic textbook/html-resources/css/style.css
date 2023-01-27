@@ -1,0 +1,184 @@
+body
+{
+  background: #C5CAE9;
+  background-image:url(fon.jpg);
+}
+ 
+.menu a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  src: url(Raleway-Regular.ttf);
+  color: black;
+}
+
+ul, ol{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  src: url(Raleway-Regular.ttf);
+  line-height: 24px;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  src: url(Raleway-Regular.ttf);
+  line-height: 24px;
+}
+
+h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  src: url(Raleway-SemiBold.ttf);
+}
+
+h1
+{
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 48px;
+  src: url(JetBrainsMono-SemiBold.ttf);
+  text-align: center;
+}
+
+.header
+{
+  background-color: #4682B4;
+  position: center;
+  border-radius: 1px;
+}
+
+.header h1
+{
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.header img
+{
+  width: 80px;
+  vertical-align: middle;
+}
+
+.menu .ul {
+  margin: 0;
+  list-style-image: url(list.png);
+  margin: 10px;
+}
+
+.menu .ul :hover{
+  color: #1430ad;
+}
+
+.menu .title  
+{
+  font-family: 'Raleway', sans-serif;
+  src: url(Raleway-SemiBold.ttf);
+  margin: 2px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu :hover{
+  color: #1430ad;
+}
+
+.title :hover{
+  /*color: #1430ad;*/
+}
+
+.content h2
+{
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  src: url(Raleway-SemiBold.ttf);
+}
+
+.b
+{
+  font-weight: bold;
+}
+
+.i
+{
+  font-style: italic;
+}
+
+.blueWord
+{
+  /*color: blue;*/
+}
+
+.classWord
+{
+  color: #3dadd6;
+}
+
+.searchWord
+{
+  background-color: yellow;
+}
+
+
+.greenComment
+{
+  color: green;
+}
+
+.codepre {
+  border: 1px solid #ccc;
+  max-width: 99%;
+  line-height: 160%;
+  white-space: pre;
+}
+
+.borderpre {
+  color: white;
+  background-color: #000;
+  border: 1px solid #ccc;
+  max-width: 99%;
+  line-height: 160%;
+}
+
+.test 
+{
+  position: relative;
+}
+
+.test .buttonHolder
+{ 
+  text-align: center; 
+  padding: 30px;
+}
+
+.test .questions .liq
+{
+  margin:20px;
+}
+
+.test .questions ol[type="I"]
+{
+  list-style-image: url(list.png);
+  margin-left: -40px; 
+}
+
+.test input[type="button"] {
+  font-size: 20px;
+  background-color: #673AB7;
+  border-radius: 12px;
+  border: 2px solid #673AB7;
+  padding: 10px 14px;
+  outline: none;
+  color: #ffffff;
+}
+
+.test input[type="button"]:hover {
+  background: #4527A0;
+  border: 2px solid #4527A0;
+  color: #ffffff;
+}

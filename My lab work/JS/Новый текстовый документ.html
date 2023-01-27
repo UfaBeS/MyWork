@@ -1,0 +1,41 @@
+<html>
+<meta charset="windows-1251">
+<style>
+input {margin: 0 12px}
+table {margin: 12px auto}
+table td {width: 321px; text-align: center}
+</style>
+<table id="t1" onclick="OnStart()">
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>32</td>
+                </tr>
+            </table>
+
+            <script language="javascript" type="text/javascript">
+                function OnStart()
+                {
+                    var TableList = new Array();                    
+                    var tr = document.getElementById("t1").getElementsByTagName("tr");
+                    for(var i=0;i<tr.length;i++)
+                    {
+                        var td = tr.item(i).getElementsByTagName("td");
+                        TableList[i] = new Array()
+                        for(var j=0;j<td.length;j++)
+                        {
+                            TableList[i][j] = td.item(j).innerText;
+                            alert(td.item(j).innerText);
+                        }
+                    }                    
+                }
+            </script>
+</body>
+</html>
